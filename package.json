@@ -2,11 +2,15 @@
   "name": "electron-react-v2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main/main.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
 }
