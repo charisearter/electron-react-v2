@@ -6,8 +6,6 @@ const root = createRoot(container);
 
 root.render(
 	<React.StrictMode>
-		<React.Fragment>
-			<div>Hello From React</div>
-		</React.Fragment>
+		<React.Fragment>Hello From React</React.Fragment>
 	</React.StrictMode>
 );

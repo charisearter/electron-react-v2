@@ -1,10 +1,11 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
 	// entry point for electron
 	entry: './src/renderer/index.jsx',
 	output: {
-		path: path.resolve(__dirname, 'ssrc/dist'),
+		path: path.resolve(__dirname, 'src/dist'),
 		filename: 'bundle.js',
 	},
 	module: {
@@ -28,4 +29,10 @@ module.exports = {
 			},
 		],
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'index.html'),
+			filename: 'index.html',
+		}),
+	],
 };
