@@ -6,7 +6,6 @@ function createWindow() {
 		width: 800,
 		height: 600,
 		show: false,
-		backgroundColor: '#002b36',
 	});
 
 	// Event listeners on the window
@@ -17,6 +16,7 @@ function createWindow() {
 
 	// Load the HTML file
 	window.loadFile('src/dist/index.html');
+	// window.loadFile('http://localhost:5000');
 }
 
 // Electron finishes initializing
