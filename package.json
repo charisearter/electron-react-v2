@@ -5,13 +5,17 @@
 	"main": "src/main/main.js",
 	"private": "true",
 	"scripts": {
-		"dev": "webpack --mode development --config ./webpack.config.js"
+		"dev-server": "webpack serve --mode development --config ./webpack.development.js",
+		"dev": "cross-env NODE_ENV=development electron .",
+		"preprod": "webpack --mode production --config ./webpack.production.js",
+		"prod": "cross-env NODE_ENV=production electron ."
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"babel-loader": "^9.1.0",
+		"cross-env": "^7.0.3",
 		"css-loader": "^6.7.3",
 		"electron": "^22.0.0",
 		"html-loader": "^4.2.0",
